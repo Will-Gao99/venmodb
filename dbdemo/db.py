@@ -38,7 +38,7 @@ class DatabaseDriver:
         cursor = self.conn.execute("SELECT * FROM task;")
         tasks = []
         for row in cursor:
-            tasks.append({'id': row[0], 'description: row[1]', "done"L row[2]})
+            tasks.append({'id': row[0], 'description': row[1], "done": row[2]})
         return tasks
 
     # Add a task

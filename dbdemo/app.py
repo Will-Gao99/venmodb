@@ -6,7 +6,7 @@ DB = db.DatabaseDriver()
 
 app = Flask(__name__)
 
-def succes_response(data, code=200):
+def success_response(data, code=200):
     return json.dumps({"success": True, "data": data}), code
 
 def failure_response(message, code=404):
